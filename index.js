@@ -5,6 +5,7 @@ const path = require("path");
 let http = require("http");
 const fs = require("fs");
 let hbs = require("hbs");
+let port = process.env.PORT || 8000
 let requests = require("requests");
 
 //partials path
@@ -103,7 +104,7 @@ app.get("*", function (req, res) {
 //   });
 // });
 
-app.listen(8000, (err) => {
+app.listen(port, (err) => {
   if (err) throw new err();
   console.log("server running on port 87k");
 });
