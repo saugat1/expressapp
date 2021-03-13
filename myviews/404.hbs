@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 404 page not found </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body style="background: url('https://www.w3schools.com/w3images/hamburger.jpg')">
+    {{>header}}
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12">
+                <form class="form bg-white w-50 mx-auto mt-5 shadow p-5" action="/upload" method="post"
+                    enctype="multipart/form-data">
+                    <h1 class="py-5 display-2 font-weight-bold">404</h1>
+                    <h3 class="display-4 mt-n5">opps page not found!</h3>
+                    <a href="/" class="mt-4 btn btn-info">home</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
